@@ -52,7 +52,7 @@ jobs:
       url: https://writeabout.net
     if: github.event.inputs.environment == 'Production'
     env: 
-      MY_PROD_SECRET: ${{ secrets.MY_PROD_VAR }}
+      MY_PROD_SECRET: ${{ secrets.MY_PROD_SECRET }}
       MY_PROD_VAR: ${{ vars.MY_PROD_VAR }}
     steps:
       - run: |
