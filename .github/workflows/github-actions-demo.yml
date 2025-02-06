@@ -57,11 +57,11 @@ jobs:
     steps:
       - run: |
           echo "🚀 Step 1..."
-          echo "$MY_PROD_SECRET"
+          echo $MY_PROD_SECRET
           sleep 10
       - run: |
           echo "🚀 Step 2..."
-          echo "$MY_PROD_VAR"
+          echo $MY_PROD_VAR
           sleep 10
       - run: |
           echo "🚀 Step 3..."
